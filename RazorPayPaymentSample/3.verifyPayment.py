@@ -1,7 +1,7 @@
 # Install from VSCode command line : >python -m pip install razorpay
 import razorpay
-
-client = razorpay.Client(auth = ('rzp_test_uURp2BX9PT5fNK', 'dOj79GSdCAN194fiZKTUms1d'))
+# Provide the keyId and secret here respectively as in step 2
+client = razorpay.Client(auth = ('rzp_test_xxx', 'zzz'))
 
 # Key_Id and secret are got from Razorpay account -> Settings -> API Keys -> Regenereate API Key
 # paymentId and signature are got from step 2
