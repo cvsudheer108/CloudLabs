@@ -17,6 +17,8 @@ Also enter the proper value for KeyId in the options argument. <br/>
 ## Step 3: Payment Verification: <br/>
 Step 2 will give back a PaymentId and signature from Razorpay as the proof of payment.<br/>
 According to the Razorpay documentation, you are supposed to verify this payment by calling another razorpay function.<br/>
-Use the values from Step2 and enter them in the file: 3.verify_payment.py
+Use the values from Step2 and enter them in the file: 3.verify_payment.py <br/><br/>
+
+NOTE: This mentod was implemented in python as I don't see this method in the : razorpay module in NodeJS. Even the sample snippet from Razorpay has no node sample.
 
 
