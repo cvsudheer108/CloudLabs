@@ -1,0 +1,61 @@
+<html>
+    <head>
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script>
+                function pay1()
+                {
+				    //key is the key_id got from Razorpay account -> Settings -> API Keys -> Regenereate API Key
+					//order_id is got from running creating the order by running the package :>node 1.createOrder
+                    const options = {
+                    key: 'rzp_test_xxx',
+                    name: "Your App Name",
+                    description: "Some Description",
+                    order_id: "order_yyy",
+                    handler: async (response) => {
+                        try {
+                        console.log(response);
+                        /* Sample Respose:
+                            checkout_logo: "https://dashboard-activation.s3.amazonaws.com/org_100000razorpay/checkout_logo/phpnHMpJe"
+                            custom_branding: false
+                            org_logo: ""
+                            org_name: "Razorpay Software Private Ltd"py 
+                            razorpay_order_id: "order_xxx"
+                            razorpay_payment_id: "pay_yyy"
+                            razorpay_signature: "zzz"
+                        */
+                        const paymentId = response.razorpay_payment_id;
+                        alert('paymentId: ' + paymentId);
+                        } catch (err) {
+                            alert(err);
+                        }
+                    },
+                    theme: {
+                        color: "#686CFD",
+                    },
+                    "modal": {
+                    "ondismiss": function(){
+                        console.log("Checkout form closed");
+                    }
+                }
+                    };
+                    const rzp1 = new window.Razorpay(options);
+                    rzp1.open();
+                }
+                
+            </script>
+
+    </head>
+    <body>
+        <h2>Shopping Cart</h2>
+        <div style="float:unset">
+            <div style="float: left;width:20%">Item1</div><div style="float: left;">Rs.100</div>
+        </div><br/>
+        <div style="float:none">
+                <div style="float: left;width:20%">Item2</div><div style="float: left;">Rs.200</div>
+        </div><br/>
+        <div>
+                <div <div style="float: left;width:20%">Total</div><div>Rs.300</div>
+        </div>
+        <input type="submit" name="pay" onclick="pay1();"></input>
+    </body>
+</html>
