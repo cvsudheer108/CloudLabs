@@ -1,0 +1,17 @@
+# Demo - How to use Presigned Url with S3 <br/>
+
+This is a simple NODEJS/Express application that hosts a simple web server implemented in app.js.<br/>
+The routes can be found implemented there.<br/>
+<br/>
+
+# Run<br/>
+1. Populate correct config values <br/>
+2. Install node modules & start the app
+>npm install<br/>
+>npm start<br/>
+<br/>
+3. Browse the Utl to open the post form
+Open: http://localhost:5000<br/>
+<br/>
+Upload a file and wait for it to finish. <br/>
+The "clientForm" folder has the HTML form to upload a file to an S3 bucket.

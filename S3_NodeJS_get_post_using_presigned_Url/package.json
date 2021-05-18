@@ -1,0 +1,22 @@
+{
+  "name": "s3_presigned_post_url",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'Building...'",
+    "start" : "node ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "2.188.0",
+    "cors": "2.8.4",
+    "dotenv": "5.0.0",
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "pm2": "^4.5.6"
+  },
+  "description": ""
+}
