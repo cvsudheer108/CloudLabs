@@ -1,0 +1,17 @@
+{
+  "name": "SLS_Samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd sls-hello-world && sls offline",
+    "test": "cd sls-hello-world && sls invoke test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^6.9.0"
+  }
+}
