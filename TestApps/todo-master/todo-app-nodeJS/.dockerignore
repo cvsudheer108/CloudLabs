@@ -1,0 +1,12 @@
+*.js
+*.html
+*.json
+*.sh
+*.ico
+*.md
+*.appcache
+view/*
+css/*
+model/*
+Makefile
+LICENSE
