@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: testLabel
+  name: testLabel
+spec:
+  replicas: 1
+  selector:
+    name: testSelector
+  template:
+    metadata:
+      labels:
+        name: testTemplate
+    spec:
+      containers:
+      - image: docker-2048
+        name: test
+        ports:
+        - containerPort: 80
