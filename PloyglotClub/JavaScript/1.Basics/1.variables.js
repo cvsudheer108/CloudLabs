@@ -40,6 +40,10 @@ console.log(newVar);  //Result: undefinedName
     //3. var declared after initialization is hoised, where as let and const doesn't allow that.
     // So hoisting is - "taking declaration to the top of the function or scope"
 */
+//0
+xx = 10;
+var xx;
+console.log(xx)
 
 //1.
 var a = 10;
